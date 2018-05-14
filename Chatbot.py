@@ -41,35 +41,29 @@ def InterpretInput(userInputArray):
 def ComposeAnswer(topicArray):
     finalAnswer = ""
     
-    #if "open dag" in topicArray:
-    #    finalAnswer = finalAnswer + "open dag info"
+
     if "proefstuderen" in topicArray:
-        finalAnswer = finalAnswer + "de eerstvolgende proefstudeerdag is op 30 mei, hier leer je "
+        finalAnswer = finalAnswer + "de eerstvolgende proefstudeerdag is op 30 mei, hier kan je de sfeer van de opleiding proeven en kijken of de manier van lesgeven wat voor jou is!"
     if "aanmelden" in topicArray:
-        finalAnswer = finalAnswer + "aanmeldings info"    
+        finalAnswer = finalAnswer + "Aanmeldingen kunnen vanaf onze site gedaan worden t/m 31 juli, dus wees snel!"    
     if "kosten" in topicArray:
         finalAnswer = finalAnswer + "kosten info"
-    #if "eerste jaar" or "1e jaar" in topicArray:
-    #    finalAnswer = finalAnswer + "eerste jaars info"
-    #if "tweede jaar" or "2e jaar" in topicArray:
-    #    finalAnswer = finalAnswer + "tweede jaars info"
-    #if "derde jaar" or "3e jaar" in topicArray:
-    #    finalAnswer = finalAnswer + "derde jaars info"    
-    #if "vierde jaar" or "4e jaar" in topicArray:
-    #    finalAnswer = finalAnswer + "vierde jaars info"
     if "afstuderen" in topicArray:
-        finalAnswer = finalAnswer + ""
+        finalAnswer = finalAnswer + "Vaak kom je er tijdens je afstudeerstage in het vierde jaar achter wat je na je studie wil doen. Als zelfstandig consultant of toch liever op de IT-afdeling van een multinational? Vraag tijdens een open dag verder over het afstuderen."
     if "stage" in topicArray:
-        finalAnswer = finalAnswer + "stage info"
+        finalAnswer = finalAnswer + "Je krijgt de gelegenheid werkervaring op te doen tijdens een stage in het derde jaar. Vijf maanden werk je bij een bedrijf om in praktijk te brengen wat je hebt geleerd!"
     if "periodes" in topicArray:
         finalAnswer = finalAnswer + "periode info"    
-    #if "werk" and "beroepen" in topicArray:
-    #    finalAnswer = finalAnswer + "werk/beroepen info"
+
 
     ReturnAnswer(finalAnswer)
     
 def ReturnAnswer(questionAnswer):
     print(questionAnswer)
+
+def AskForAnotherQuestion():
+    print("Zijn er nogmeer vragen?")
+    GetUserInput()
     
 
 ## RUN
